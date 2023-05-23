@@ -1,12 +1,12 @@
 import React from 'react'
-import { Row, Card, Button } from 'react-bootstrap'
+import { Row, Card } from 'react-bootstrap'
 import data from './data'
-const Foods = () => {
+const Foods = ({datainUse}) => {
     return (
         <div>
             {
                 data.length >= 1 ? (
-                    data.map((itemCard) => {
+                    datainUse.map((itemCard) => {
                         return (
                             <Row className='mt-1 p-2' key={itemCard.id}>
                                 <Card className='d-flex flex-row'>
